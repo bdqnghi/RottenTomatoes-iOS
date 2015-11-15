@@ -15,8 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = UIColor(red: 209/255, green: 178/255, blue: 77/255, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        //        UISearchBar.appearance().searchBarStyle = UISearchBarStyle.Minimal
+        UISearchBar.appearance().tintColor = UIColor(red: 0/255, green: 0/255, blue: 80/255, alpha: 1.0)
+        
+        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().backgroundColor = UIColor(red: 209/255, green: 178/255, blue: 77/255, alpha: 1.0)
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        
+        var urlCache = NSURLCache(memoryCapacity: 20 * 1024 * 1024, diskCapacity: 100 * 1024 * 1024, diskPath: nil)
+        NSURLCache.setSharedURLCache(urlCache)
+        
+        
         return true
+
     }
 
     func applicationWillResignActive(application: UIApplication) {
