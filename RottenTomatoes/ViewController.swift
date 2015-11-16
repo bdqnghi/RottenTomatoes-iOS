@@ -124,7 +124,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             }
         }
        
-        print(newFilteredMovies)
+       
         
         filteredMovies = newFilteredMovies
 //        if(filteredMoviesTitle.isEmpty == false){
