@@ -38,3 +38,4 @@ Time spent: 15hrs
 * [x] Switch between list view and grid view
 
 ### Walkthrough
+![Alt text](/images/walk.gif?raw=true "Demo page")
